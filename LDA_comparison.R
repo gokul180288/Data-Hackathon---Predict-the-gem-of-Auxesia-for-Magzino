@@ -54,5 +54,5 @@ for(j in seq_len(nrow(train)))
 #> sum(train$shares[LDA_04])/length(LDA_04)
 #[1] 3189.968
 
-# We can see that when a published material resembles LDA_03 it highly shared (relatively)
+# We can see that when a published material resembles LDA_03 it is highly shared (relatively)
 
