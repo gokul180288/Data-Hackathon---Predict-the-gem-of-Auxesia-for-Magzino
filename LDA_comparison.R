@@ -1,3 +1,4 @@
+# compare which LDA has maximum relative shares
 for(j in seq_len(nrow(train)))
 {
  if(j==1)
@@ -42,8 +43,6 @@ for(j in seq_len(nrow(train)))
  }
 }
 
-train$LDA = ifelse(train$LDA_03 > train$LDA_00 & train$LDA_01 & train$LDA_02 & train$LDA_04,1,0)
-
 #> sum(train$shares[LDA_00])/length(LDA_00)
 #[1] 2996.37
 #> sum(train$shares[LDA_01])/length(LDA_01)
@@ -55,4 +54,5 @@ train$LDA = ifelse(train$LDA_03 > train$LDA_00 & train$LDA_01 & train$LDA_02 & t
 #> sum(train$shares[LDA_04])/length(LDA_04)
 #[1] 3189.968
 
+# We can see that when a published material resembles LDA_03 it highly shared (relatively)
 
